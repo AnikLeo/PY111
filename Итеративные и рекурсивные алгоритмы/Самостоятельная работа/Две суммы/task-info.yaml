@@ -15,7 +15,7 @@ files:
               for idx, val in enumerate(nums):
                   if dict_.get(val) and not dict_[val] == idx:
                       return [dict_[val], idx]
-        selected: false
+        selected: true
         status: Unchecked
     learner_created: false
   - name: tests/test_task.py
