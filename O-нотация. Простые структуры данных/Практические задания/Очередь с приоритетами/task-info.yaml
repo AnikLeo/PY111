@@ -8,8 +8,8 @@ files:
         placeholder_text: "...  # TODO использовать deque для реализации очереди с при\
       оритетами"
         initial_state:
-          length: 68
-          offset: 258
+          length: 147
+          offset: 280
         initialized_from_dependency: false
         encrypted_possible_answer: |-
           self.priority_queue: dict[int, deque] = {
@@ -21,8 +21,8 @@ files:
         length: 69
         placeholder_text: "...  # TODO реализовать метод enqueue"
         initial_state:
-          length: 37
-          offset: 601
+          length: 69
+          offset: 723
         initialized_from_dependency: false
         encrypted_possible_answer: "self.priority_queue[priority].append(elem)"
         selected: true
@@ -31,8 +31,8 @@ files:
         length: 159
         placeholder_text: "...  # TODO реализовать метод dequeue"
         initial_state:
-          length: 37
-          offset: 862
+          length: 159
+          offset: 1032
         initialized_from_dependency: false
         encrypted_possible_answer: |-
           for queue in self.priority_queue.values():
@@ -46,8 +46,8 @@ files:
         length: 67
         placeholder_text: "...  # TODO реализовать метод peek"
         initial_state:
-          length: 34
-          offset: 1467
+          length: 67
+          offset: 1907
         initialized_from_dependency: false
         encrypted_possible_answer: |-
           if not isinstance(ind, int):
@@ -64,8 +64,8 @@ files:
         length: 46
         placeholder_text: "...  # TODO реализовать метод clear"
         initial_state:
-          length: 35
-          offset: 1573
+          length: 46
+          offset: 2046
         initialized_from_dependency: false
         encrypted_possible_answer: |-
           for queue in self.priority_queue.values():
@@ -76,8 +76,8 @@ files:
         length: 18
         placeholder_text: "...  # TODO реализовать метод __len__"
         initial_state:
-          length: 37
-          offset: 1689
+          length: 18
+          offset: 2173
         initialized_from_dependency: false
         encrypted_possible_answer: |-
           len_ = 0

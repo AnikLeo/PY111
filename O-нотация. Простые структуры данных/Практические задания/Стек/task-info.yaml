@@ -7,7 +7,7 @@ files:
         length: 58
         placeholder_text: "...  # TODO реализовать операцию push"
         initial_state:
-          length: 37
+          length: 58
           offset: 263
         initialized_from_dependency: false
         encrypted_possible_answer: self._stack.append(elem)
@@ -17,8 +17,8 @@ files:
         length: 56
         placeholder_text: "...  # TODO реализовать операцию pop"
         initial_state:
-          length: 36
-          offset: 514
+          length: 56
+          offset: 535
         initialized_from_dependency: false
         encrypted_possible_answer: |-
           if not self._stack:
@@ -31,8 +31,8 @@ files:
         length: 61
         placeholder_text: "...  # TODO реализовать операцию peek"
         initial_state:
-          length: 37
-          offset: 1022
+          length: 61
+          offset: 1062
         initialized_from_dependency: false
         encrypted_possible_answer: |-
           if not isinstance(ind, int):
@@ -49,8 +49,8 @@ files:
         length: 53
         placeholder_text: "...  # TODO реализовать операцию clear"
         initial_state:
-          length: 38
-          offset: 1129
+          length: 53
+          offset: 1193
         initialized_from_dependency: false
         encrypted_possible_answer: self._stack.clear()
         selected: true
@@ -59,8 +59,8 @@ files:
         length: 60
         placeholder_text: "...  # TODO реализовать операцию __len__"
         initial_state:
-          length: 40
-          offset: 1253
+          length: 60
+          offset: 1332
         initialized_from_dependency: false
         encrypted_possible_answer: return len(self._stack)
         selected: true
