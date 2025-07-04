@@ -1,6 +1,22 @@
-]from typing import Union
+from typing import Union
 
 import networkx as nx
+
+
+def build_graph(stairway):
+    graph = {}
+    n = len(stairway)
+    for i in range(-1, n):
+        graph[i] = []
+        if i + 1 < n:
+            graph[i].append((i + 1, stairway[i + 1]))
+        if i + 2 < n:
+            graph[i].append((i + 2, stairway[i + 2]))
+    return graph
+
+
+
+
 
 
 def stairway_path(graph: nx.DiGraph) -> Union[float, int]:
@@ -11,12 +27,7 @@ def stairway_path(graph: nx.DiGraph) -> Union[float, int]:
     :param graph: Взвешенный направленный граф NetworkX, по которому надо рассчитать стоимости кратчайших путей
     :return: минимальная стоимость подъема на верхнюю ступень
     """
-    # _, coasts = nx.dijkstra_predecessor_and_distance(g, starting_node)
-    #     for node in g.nodes:
-    #         if node not in coasts:
-    #             coasts[node] = float("inf")
-    #
-    #     return coasts
+    graph =
 
     n = len(stairway)
 
