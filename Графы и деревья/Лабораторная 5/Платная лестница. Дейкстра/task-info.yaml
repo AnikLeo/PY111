@@ -3,7 +3,7 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 447
+      - offset: 448
         length: 216
         placeholder_text: "...  # TODO c помощью функции из модуля networkx найти стои\
       мость кратчайшего пути до последней лестницы"
@@ -14,7 +14,7 @@ files:
         encrypted_possible_answer: '...'
         selected: true
         status: Unchecked
-      - offset: 838
+      - offset: 966
         length: 108
         placeholder_text: "...  # TODO записать взвешенный граф, а лучше написать функ\
       цию, которая формирует граф по стоимости ступеней"

@@ -1,4 +1,4 @@
-from typing import Union
+]from typing import Union
 
 import networkx as nx
 
@@ -23,6 +23,12 @@ def stairway_path(graph: nx.DiGraph) -> Union[float, int]:
     if len == 1:
         return stairway[0]
 
+    distances = [float('inf')] * (n+1)
+    distances[] = 0
+
+    predecessor = {node: None for node in g.nodes}
+
+    queue = Pr
 
 
 

@@ -18,7 +18,7 @@ files:
                       coasts[node] = float("inf")
           
               return coasts
-        selected: false
+        selected: true
         status: Failed
       - offset: 723
         length: 25
