@@ -11,7 +11,7 @@ def dijkstra_algo(g: nx.DiGraph, starting_node: Hashable) -> Mapping[Hashable, U
     :param starting_node: Стартовый узел, откуда нужно начать обход
     :return: словарь как {'node1': 0, 'node2': 10, '3': 33, ...} со стоимостью путей, где node1, node2 - это узлы из графа g
     """
-    ...  # TODO вернуть стоимость путей до всех вершин посчитанных алгоритмом Дейкстры
+
 
 
 if __name__ == '__main__':

@@ -3,8 +3,8 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 693
-        length: 82
+      - offset: 689
+        length: 0
         placeholder_text: "...  # TODO вернуть стоимость путей до всех вершин посчитан\
       ных алгоритмом Дейкстры"
         initial_state:
@@ -20,7 +20,7 @@ files:
               return coasts
         selected: false
         status: Unchecked
-      - offset: 809
+      - offset: 723
         length: 25
         placeholder_text: "...  # TODO записать граф"
         initial_state:
