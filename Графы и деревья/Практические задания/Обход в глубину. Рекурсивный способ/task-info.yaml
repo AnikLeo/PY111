@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 561
-        length: 636
+        length: 992
         placeholder_text: "...  # TODO реализовать обход в глубину"
         initial_state:
           length: 39

@@ -13,21 +13,39 @@ def dfs(g: nx.Graph, start_node: Hashable) -> List[Hashable]:
     :param start_node: Стартовый узел, откуда нужно начать обход
     :return: Список узлов в порядке посещения.
     """
+    # visited = {node: False for node in g.nodes}
+    # d = deque()
+    # path = []
+    #
+    # d.append(start_node)
+    # visited[start_node] = True
+    # while d:
+    #     current_node = d.pop()
+    #     path.append(current_node)
+    #     for ng in g.neighbors(current_node):
+    #         if not visited[ng]:
+    #             d.append(ng)
+    #             visited[ng] = True
+    #
+    # return path
+
     visited = {node: False for node in g.nodes}
-    d = deque()
     path = []
 
-    d.append(start_node)
-    visited[start_node] = True
-    while d:
-        current_node = d.pop()
+    def rec_func(current_node):
+        visited[current_node] = True
         path.append(current_node)
         for ng in g.neighbors(current_node):
             if not visited[ng]:
-                d.append(ng)
-                visited[ng] = True
+                rec_func(ng)
+
+    rec_func(start_node)
 
     return path
+
+
+
+
 
 if __name__ == '__main__':
     graph = nx.Graph()
@@ -38,8 +56,8 @@ if __name__ == '__main__':
         ('A', 'B'),
         ('B', 'D'),
         ('B', 'E'),
-        ('E', 'G'),
+        ('G', 'E'),
 
     ])
 
-    print(bfs(graph, "A"))
+    print(dfs(graph, "A"))

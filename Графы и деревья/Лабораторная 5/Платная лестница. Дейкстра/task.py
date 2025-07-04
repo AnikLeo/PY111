@@ -11,7 +11,21 @@ def stairway_path(graph: nx.DiGraph) -> Union[float, int]:
     :param graph: Взвешенный направленный граф NetworkX, по которому надо рассчитать стоимости кратчайших путей
     :return: минимальная стоимость подъема на верхнюю ступень
     """
-    ...  # TODO c помощью функции из модуля networkx найти стоимость кратчайшего пути до последней лестницы
+    # _, coasts = nx.dijkstra_predecessor_and_distance(g, starting_node)
+    #     for node in g.nodes:
+    #         if node not in coasts:
+    #             coasts[node] = float("inf")
+    #
+    #     return coasts
+
+    n = len(stairway)
+
+    if len == 1:
+        return stairway[0]
+
+
+
+
 
 
 if __name__ == '__main__':
