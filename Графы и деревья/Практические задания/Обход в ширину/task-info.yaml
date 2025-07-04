@@ -33,9 +33,9 @@ files:
           
               return path
         selected: true
-        status: Failed
+        status: Solved
       - offset: 963
-        length: 380
+        length: 379
         placeholder_text: "# TODO записать граф с помощью модуля networkx и прверить о\
       бход в ширину"
         initial_state:
@@ -62,8 +62,8 @@ files:
               ])
           
               print(bfs(graph, "A"))
-        selected: false
-        status: Failed
+        selected: true
+        status: Solved
     learner_created: false
   - name: tests/__init__.py
     visible: false
@@ -72,8 +72,8 @@ files:
     visible: true
     is_binary: true
     learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: Error
-  time: "Fri, 04 Jul 2025 15:30:12 UTC"
+  message: Congratulations!
+  time: "Fri, 04 Jul 2025 17:12:00 UTC"
 record: -1

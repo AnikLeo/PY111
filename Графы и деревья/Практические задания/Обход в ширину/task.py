@@ -52,4 +52,4 @@ if __name__ == '__main__':
         ('E', 'D'),
     ])
 
-    print(bfs(graph, "A"))у
+    print(bfs(graph, "A"))
